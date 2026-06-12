@@ -55,7 +55,6 @@ def main():
         parallel=False                
     )
 
-    # Initialize and launch the attack
     attacker = textattack.Attacker(attack, dataset, attack_args)
     print("Starting the attack loop against the cryptographically secured model...")
     attacker.attack_dataset()
